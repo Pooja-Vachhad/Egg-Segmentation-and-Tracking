@@ -18,7 +18,7 @@
 | `split.py` | Task 2: makes `split.csv` (dev/eval) |
 | `experiments.py` | Task 2: helper functions (fixed, Otsu, adaptive threshold, border removal). Not run directly. |
 | `main.py` | Task 2: demo of algo0 on one image |
-| `metrics.py` | Task 3: runs algo0 on all images, saves metrics and best/worst figures |
+| `algo0.py` | Task 3: runs algo0 on all images, saves metrics and best/worst figures |
 | `track.py` | Task 4: tracking on the video |
 | `report.pdf` | Full report |
 
@@ -33,8 +33,8 @@
 ## Setup
 1. Clone the repo and install the requirements:
 ```
-   git clone <your repo link>
-   cd <repo name>
+   git clone https://github.com/Pooja-Vachhad/Egg-Segmentation-and-Tracking.git
+   cd Egg-Segmentation-and-Tracking
    pip install -r requirements.txt
 ```
 2. Download the SAM checkpoint (`vit_h`) and put it in the repo folder:
@@ -49,7 +49,7 @@ A GPU is recommended for SAM. It also runs on CPU, but it is slow.
 ```
 python sam.py       # SAM masks -> sam_masks/
 python split.py     # dev/eval split -> split.csv
-python metrics.py   # algo0 + metrics -> results/
+python algo0.py   # algo0 + metrics -> results/
 python track.py     # tracking on the video
 ```
 - For tracking: put the video in the same folder as `track.py`, and set its file name at the top of `track.py`:
