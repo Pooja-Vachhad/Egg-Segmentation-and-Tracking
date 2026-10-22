@@ -1,7 +1,7 @@
 # Egg Segmentation and Tracking (CV Intern Task)
 
 - Report: `report.pdf` (in this repo)
-- Tracking video and all outputs (Google Drive): https://drive.google.com/file/d/1AQb4GCPZRGx-FoZV2DSINwa-Bl6W4fvk/view?usp=sharing
+- Tracking video and all outputs (Google Drive): [Open folder](https://drive.google.com/drive/folders/1Uik9NJ19-7ck7PFM1zFb_xYgKGcUayZ1?usp=drive_link)
 
 ## What this repo does
 | Task | What I did |
