@@ -37,11 +37,19 @@
    cd Egg-Segmentation-and-Tracking
    pip install -r requirements.txt
 ```
-2. Download the SAM checkpoint (`vit_h`) and put it in the repo folder:
-   https://dl.fbaipublicfiles.com/segment_anything/sam_vit_h_4b8939.pth
-3. Get the data. Choose one:
-   - **Quick:** download `folder/`, `sam_masks/`, `bad_mask/` and `split.csv` from Drive and put them in the repo folder.
-   - **From scratch:** put the original images in `folder/` and run `sam.py`.
+2. Get the data. Choose one:
+
+   **Option A: Quick (recommended)**
+   Download these from the Drive folder and put them in the repo folder:
+   `folder/`, `sam_masks/`, `bad_mask/`, `split.csv`
+   Then go to "How to run". The SAM checkpoint is not needed.
+
+   **Option B: From scratch**
+   - Download the Roboflow dataset and put **all** images directly in `folder/` (no subfolders like `train/`).
+   - Download the SAM checkpoint (`vit_h`) and put it in the repo folder:
+     https://dl.fbaipublicfiles.com/segment_anything/sam_vit_h_4b8939.pth
+   - Run `python sam.py` to make the masks.
+     Note: the bad SAM masks were found by checking by eye, so `bad_mask/` has to come from Drive.
 
 A GPU is recommended for SAM. It also runs on CPU, but it is slow.
 
