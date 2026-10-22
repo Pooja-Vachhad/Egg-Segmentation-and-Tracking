@@ -27,7 +27,10 @@
 - `sam_masks/`: SAM masks
 - `bad_mask/`: images with wrong SAM masks (left out of the metrics)
 - `split.csv`: dev/eval split
-- `results/`: results of the three algorithms (overall metrics, per-image metrics, 5 best/worst images)
+- `results/`: results of the three algorithms
+  - overall metrics and per-image metrics
+  - 5 best and 5 worst images
+  - `parameter.csv`: the parameter values I tried for algo0 (threshold, blur, min area) with their dev results, to show why I chose the final values
 - `output.mp4`: tracking video
 
 ## Setup
